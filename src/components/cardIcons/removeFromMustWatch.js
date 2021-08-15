@@ -1,4 +1,3 @@
-//Future functionality
 
 import React, { useContext } from "react";
 import IconButton from "@material-ui/core/IconButton";

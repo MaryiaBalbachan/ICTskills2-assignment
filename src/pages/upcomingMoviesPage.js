@@ -30,8 +30,8 @@ const UpcomingMoviesPage = (props) => {
   }, []);
 */
 
-  const favorites = movies.filter(m => m.favorite)
-  localStorage.setItem('favorites', JSON.stringify(favorites))
+  const mustwatch = movies.filter(m => m.mustwatch)
+  localStorage.setItem('mustwatch', JSON.stringify(mustwatch))
 
   return (
     <PageTemplate
