@@ -35,7 +35,7 @@ const MustWatchMoviesPage = () => {
         return (
           <>
             <RemoveFromMustWatch movie={movie} />
-            <WriteReview movie={movie} />
+           
           </>
         );
       }}

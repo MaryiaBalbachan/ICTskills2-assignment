@@ -5,6 +5,7 @@ import { getPopularMovies } from "../api/tmdb-api";
 import { useQuery } from 'react-query'
 import Spinner from '../components/spinner';
 import AddToMustWatchIcon from "../components/cardIcons/addToMustWatch";
+import AddToFavoritesIcon from '../components/cardIcons/addToFavorites'
 
 
 
@@ -38,8 +39,12 @@ const PopularMoviesPage = (props) => {
       title='Popular Movies'
       movies={movies}
       action={(movie) => {
-        return <AddToMustWatchIcon movie={movie} />
-      //selectFavorite={addToFavorites}
+        return (
+          <>
+            <AddToMustWatchIcon movie={movie} />
+            <AddToFavoritesIcon movie={movie} />
+          </>
+        );
 
       }}
     />
