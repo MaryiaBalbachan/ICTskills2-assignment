@@ -1,19 +1,14 @@
 # Assignment - ReactJS app.
 
-Name: ... your name ...
+Name: ... Maryia Balbachan ...
 
 ## Overview.
-
-...... State the app concept and objectives. If it's the Movies Fan app extension, only state the additional objectives .........
-
-
-...... A bullet-point list of user features. If it's the Movies Fan app extension, only list new/modified features...... 
  
- + Feature 1
- + Feature 2
- + Feature 3
- + etc
- + etc
+ + Feature 1: Popular page: Get a list of the current popular movies on TMDB. This list updates daily.
+ + Feature 2: User can add movies to Must Watch list as well as favourite from both Upcoming movies and Popular Movies
+ + Feature 3: Must watch page added to view movies that have been selected as a Must watch. User can also remove movies form their Must watch list/page
+ + 
+ 
 
 ## Setup requirements.
 
@@ -21,7 +16,6 @@ Name: ... your name ...
 
 ## API Data Model.
 
-..... [For non-Movies Fan app] Insert a diagram of the API's data model (see example below) AND/OR a sample(s) of the JSON documents returned by its endpoints ........
 
 ![][model]
 
@@ -50,12 +44,11 @@ Name: ... your name ...
 + POST /blogs (protected) - add a new blog.
 + GET /blogs/:id - displays a particular blog.
 + GET /blogs/:id/comments (protected) - detail view of a particular blog and its comments.
-+ etc.
-+ etc.
+
 
 ## Independent learning (If relevant).
 
-....... Briefly state any technologies/techniques used in your project codebase that was not covered in the lectures/labs. Provide source code filename (source code excerpts are not required in most cases) references to support your assertions and include references (articles/blogs) ......... 
+Not applicable
 
 
 [model]: ./data.jpg

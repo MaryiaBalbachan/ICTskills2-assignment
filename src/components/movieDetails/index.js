@@ -46,6 +46,13 @@ const MovieDetails = ({ movie } ) => {
       <Typography variant="h6" component="p">
         {movie.overview}
       </Typography>
+      <Typography variant="h5" component="h3">
+        Credits
+      </Typography>
+
+      <Typography variant="h6" component="p">
+        {movie.credits}
+      </Typography>
 
       <Paper component="ul" className={classes.root}>
         <li>

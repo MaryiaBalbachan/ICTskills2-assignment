@@ -1,7 +1,7 @@
 
   export const getMovies = async () => {
     const response = await fetch(
-      `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_TMDB_KEY}&language=en-US&include_adult=false&include_video=false&page=1`
+      `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_TMDB_KEY}&language=en-US&include_adult=false&include_video=false&page=5`
     );
     if (!response.ok) {
       throw new Error(response.json().message);
@@ -33,6 +33,16 @@
     return response.json(); 
   };
 
+  export const getTrendingMovies = async () => {
+    const response = await fetch(
+     `https://api.themoviedb.org/3/movie/top_rated?api_key=${process.env.REACT_APP_TMDB_KEY}`
+   
+     )
+    if (!response.ok) {
+      throw new Error(response.json().message);
+    }
+    return response.json(); 
+  };
 
   export const getMovie = async ( args ) => {
     console.log(args)
@@ -83,7 +93,19 @@
         // console.log(json.results);
         return json.results;
       });
+      
+      
+  };
 
-
+  export const getMovieCredits = (id) => {
+    return fetch(
+      `https://api.themoviedb.org/3/movie/${id}/credits?api_key=${process.env.REACT_APP_TMDB_KEY}`
+    )
+      .then((res) => res.json())
+      .then((json) => {
+        // console.log(json.results);
+        return json.results;
+      });
+      
       
   };
