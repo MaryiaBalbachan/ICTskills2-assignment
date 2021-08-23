@@ -1,14 +1,14 @@
 # Assignment - ReactJS app.
 
-Name: ... Maryia Balbachan ...
+Name: ... Maryia Balbachan: 20029834 ...
 
 ## Overview.
- 
+ ........
  + Feature 1: Popular page: Get a list of the current popular movies on TMDB. This list updates daily.
  + Feature 2: User can add movies to Must Watch list as well as favourite from both Upcoming movies and Popular Movies
  + Feature 3: Must watch page added to view movies that have been selected as a Must watch. User can also remove movies form their Must watch list/page
  + Feature 4: Top rated movies of all times page added with the same functionality as Upcoming and Popular to add movies to favourites and Must Watch.
- 
+ .........
 
 ## Setup requirements.
 
@@ -19,14 +19,17 @@ Name: ... Maryia Balbachan ...
 
 ![][model]
 
-......[For the Movies Fan app] Specify the additional TMDB endpoints used and show sample responses, in JSON .........
+![][model1]
+
+.....Additional Endpoints used:
++ Popular Movies `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_TMDB_KEY}&language=en-US&page=1`
++ Top Rated Movies `https://api.themoviedb.org/3/movie/top_rated?api_key=${process.env.REACT_APP_TMDB_KEY}`.........
 
 ## App Design.
 
 ### Component catalogue.
 
-....... Insert a screenshot from the Storybook UI showing your component catalogue. [For the Movies app, hi-light stories relating to new/modified components - see the example screenshot below] .......
-
+I have kept the same structure for Storybook park as our lab work. The only amendements I have made is adding the AddToMustWatch button to the Movie card for default and exception cases.
 ![][stories]
 ![][stories1]
 ![][stories2]
@@ -45,7 +48,6 @@ Name: ... Maryia Balbachan ...
 
 ### Routing.
 
-...... Insert a list of the routes supported by your app and state the associated view. If relevant, specify which of the routes require authentication, i.e. protected/private. [For the Movies Fan app, only new routes should be listed.] ......... 
 
 + GET /blogs - displays all published blogs.
 + POST /blogs (protected) - add a new blog.
@@ -58,7 +60,8 @@ Name: ... Maryia Balbachan ...
 Not applicable
 
 
-[model]: ./data.jpg
+[model]: ./popularresponse.png
+[model1]: ./topratedresponse.png
 [view]: ./popular.png
 [view1]: ./mustwatch.png
 [view2]: ./toprated.png
