@@ -28,7 +28,7 @@ const TrendingMoviesPage = (props) => {
 
   return (
     <PageTemplate
-      title='Trending Movies'
+      title='Top Rated Movies of All Times'
       movies={movies}
       action={(movie) => {
         return (

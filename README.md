@@ -50,12 +50,8 @@ I have kept the same structure for Storybook park as our lab work. The only amen
 
 ### Routing.
 
-
-+ GET /blogs - displays all published blogs.
-+ POST /blogs (protected) - add a new blog.
-+ GET /blogs/:id - displays a particular blog.
-+ GET /blogs/:id/comments (protected) - detail view of a particular blog and its comments.
-
++ GET /movie/top_rated Get the top rated movies on TMDB.
++ GET /movie/popular Get a list of the current popular movies on TMDB. This list updates daily.
 
 ## Independent learning (If relevant).
 
