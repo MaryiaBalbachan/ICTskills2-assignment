@@ -16,14 +16,16 @@ Name: ... Maryia Balbachan: 20029834 ...
 
 ## API Data Model.
 
-
-![][model]
-
-![][model1]
-
 .....Additional Endpoints used:
 + Popular Movies `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_TMDB_KEY}&language=en-US&page=1`
 + Top Rated Movies `https://api.themoviedb.org/3/movie/top_rated?api_key=${process.env.REACT_APP_TMDB_KEY}`.........
+
+![][model]
+>TMDB popular query response.
+
+![][model1]
+>TMDB top rated query response.
+
 
 ## App Design.
 
