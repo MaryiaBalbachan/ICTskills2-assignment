@@ -6,6 +6,7 @@ import { action } from "@storybook/addon-actions";
 import AddToFavoritesIcon from "../components/cardIcons/addToFavorites";
 import Grid from "@material-ui/core/Grid";
 import MoviesContextProvider from "../contexts/moviesContext";
+import AddToMustWatchIcon from "../components/cardIcons/addToMustWatch";
 
 export default {
   title: "Home Page/MovieList",
@@ -28,7 +29,15 @@ export const Basic = () => {
     <Grid container spacing={5}>
       <MovieList
         movies={movies}
-        action={(movie) => <AddToFavoritesIcon movie={movie} />}
+        action={(movie) => {
+          return (
+            <>
+              <AddToMustWatchIcon movie={movie} />
+              <AddToFavoritesIcon movie={movie} />
+            </>
+          );
+          
+        }}
       />
     </Grid>
   );
